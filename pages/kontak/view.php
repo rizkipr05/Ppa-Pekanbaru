@@ -26,18 +26,25 @@
         
         <hr>
 
-        <div class="row">
-            <div class="col-lg-12">
-                <div style="padding: 0 10px;text-align:justify"> 
-                    <div class="panel panel-default">
-                        <div class="panel-body">
-                            <iframe src="" width="700" height="350" frameborder="0" style="border:0" allowfullscreen></iframe>
-                        </div>
+    <div class="col-lg-12">
+        <div style="padding: 0 10px;text-align:justify"> 
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe
+                            class="embed-responsive-item"
+                            src="https://www.google.com/maps?q=Jl.+Pattimura+No.+13+Pekanbaru+Riau&output=embed"
+                            frameborder="0"
+                            style="border:0"
+                            allowfullscreen
+                            loading="lazy">
+                        </iframe>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+</div>
 
     <div class="col-md-4">
          
