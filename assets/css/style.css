@@ -4,6 +4,7 @@ body {
   line-height: 1.42857143;
   color: #555;
   background-color: #fff;
+  padding-top: 60px;
 }
 
 .navbar-inverse {
@@ -15,6 +16,10 @@ body {
     border-color: #fff;
 }
 
+.navbar-inverse .navbar-toggle .icon-bar {
+    background-color: #fff;
+}
+
 .navbar-inverse .navbar-brand {
     color: #fff;
 }
@@ -22,10 +27,23 @@ body {
 .navbar-brand {
     float: left;
     font-size: 20px;
-    height: 60px;
-    line-height: 30px;
-    padding: 15px;
+    height: auto;
+    line-height: 1.2;
+    padding: 10px 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
+
+.navbar-brand img {
+    height: 40px;
+    width: auto;
+}
+
+.navbar-brand-logo {
+    display: block;
+}
+
 
 .navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:focus, .navbar-inverse .navbar-nav > .active > a:hover {
     background-color: #357ca5;
@@ -44,8 +62,10 @@ body {
 .navbar-nav > li > a {
     padding-bottom: 15px;
     padding-top: 15px;
-    line-height: 30px;
+    line-height: 20px;
     font-size: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .navbar-inverse .navbar-nav > .active > a,
@@ -58,6 +78,56 @@ body {
 .navbar-inverse .navbar-nav > .open > a, .navbar-inverse .navbar-nav > .open > a:focus, .navbar-inverse .navbar-nav > .open > a:hover {
     background-color: #357ca5;
     color: #fff;
+}
+
+
+@media (max-width: 991px) {
+    .navbar-header {
+        float: none;
+    }
+
+    .navbar-toggle {
+        display: block;
+        margin-top: 12px;
+        margin-right: 15px;
+    }
+
+    .navbar-collapse {
+        border-top: 1px solid rgba(255, 255, 255, 0.2);
+        box-shadow: none;
+    }
+
+    .navbar-collapse.collapse {
+        display: none !important;
+    }
+
+    .navbar-collapse.collapse.in {
+        display: block !important;
+    }
+
+    .navbar-nav {
+        float: none !important;
+        margin: 7.5px -15px;
+    }
+
+    .navbar-nav > li {
+        float: none;
+    }
+
+    .navbar-nav > li > a {
+        padding: 10px 15px;
+        line-height: 1.4;
+    }
+
+    .navbar-fixed-top .navbar-collapse,
+    .navbar-fixed-bottom .navbar-collapse {
+        max-height: 80vh;
+    }
+
+    .navbar-brand {
+        padding: 10px 15px;
+    }
+
 }
 
 header.carousel {
@@ -84,7 +154,7 @@ footer {
     background: #34495e none repeat scroll 0 0;
     padding: 25px 0 15px 0;
     width: 100%;
-    position: absolute;
+    position: relative;
     text-align: center;
 	color: #fff;
 }
@@ -98,12 +168,9 @@ footer a:hover {
 	text-decoration: none;
 }
 
-.btn-daftar
-{
-    height: 60px;
-    width: 60px;
-    font-size: 30px;
-    margin: 0px;
+
+.home-hero-cta .btn{
+  width: 100%;
 }
 
 .h1-informasi
@@ -126,6 +193,68 @@ footer a:hover {
     border-radius: 50px;
     background: #fff;
     color: #337ab7;
+}
+
+.home-hero {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.home-hero .page-header {
+    margin: 0 0 12px;
+    font-size: 26px;
+    line-height: 1.4;
+}
+
+.home-hero-text p {
+    margin-bottom: 0;
+    color: #555;
+}
+
+.home-hero-cta {
+    text-align: center;
+    margin-top: 5px;
+}
+
+.home-main {
+    margin-top: 10px;
+}
+
+.home-carousel {
+    margin-top: 15px;
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+}
+
+.home-info-title {
+    margin-top: 18px;
+}
+
+.home-info-item {
+    margin-bottom: 10px;
+}
+
+.home-info-image {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+
+.home-sidebar {
+    padding-left: 10px;
+}
+
+@media (max-width: 991px) {
+    .home-hero-cta {
+        text-align: left;
+        margin-top: 15px;
+    }
+
+    .home-sidebar {
+        padding-left: 0;
+        margin-top: 20px;
+    }
 }
 
 .social-twitter a {

@@ -88,7 +88,7 @@ session_start();
                         <span class="icon-bar"></span>
                     </button>
                     <a class="navbar-brand" href="?page=home">
-                        <img style="margin-top:-5px" src="assets/img/logo_ditku.png" height="40">
+                        <img class="navbar-brand-logo" src="assets/img/logo_ditku.png" height="40" alt="PPA">
                     </a>
                 </div>
                 <!-- Collect the nav links, forms, and other content for toggling -->
@@ -105,7 +105,7 @@ session_start();
         </nav>
     
         <!-- Page Content -->
-        <div style="min-height:520px" class="container">
+        <div class="container page-content">
             <?php  
             require_once "config/database.php";
 

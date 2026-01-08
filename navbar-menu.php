@@ -1,4 +1,3 @@
-<title>rubrik</title>
 <ul class="nav navbar-nav navbar-right">
 <?php   
 // fungsi untuk pengecekan menu aktif
