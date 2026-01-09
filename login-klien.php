@@ -3,11 +3,11 @@
 require_once "config/database.php";
 
 // ambil data hasil submit dari form
-$email    = mysqli_real_escape_string($mysqli, stripslashes(strip_tags(htmlspecialchars(trim($_POST['email'])))));
+$username = mysqli_real_escape_string($mysqli, stripslashes(strip_tags(htmlspecialchars(trim($_POST['username'])))));
 $password = mysqli_real_escape_string($mysqli, stripslashes(strip_tags(htmlspecialchars(trim(md5($_POST['password']))))));
 
-// ambil data dari tabel pegawai untuk pengecekan berdasarkan inputan email dan passrword
-$query = mysqli_query($mysqli, "SELECT * FROM tbl_klien WHERE email='$email' AND password='$password'")
+// ambil data dari tabel klien untuk pengecekan berdasarkan inputan username dan password
+$query = mysqli_query($mysqli, "SELECT * FROM tbl_klien WHERE username='$username' AND password='$password'")
 								or die('Ada kesalahan pada query klien: '.mysqli_error($mysqli));
 $rows  = mysqli_num_rows($query);
 

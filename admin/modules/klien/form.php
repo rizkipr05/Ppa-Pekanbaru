@@ -103,6 +103,14 @@ if ($_GET['form']=='add') { ?>
 					</div>
 
 					<div class="form-group">
+						<label class="col-sm-2 col-xs-12 control-label no-padding-right">Username</label>
+
+						<div class="col-sm-4 col-xs-12">
+							<input type="text" class="form-control" name="username" autocomplete="off" required />
+						</div>
+					</div>
+
+					<div class="form-group">
 						<label class="col-sm-2 col-xs-12 control-label no-padding-right">Email</label>
 
 						<div class="col-sm-4 col-xs-12">
@@ -260,6 +268,14 @@ elseif ($_GET['form']=='edit') {
 						<!--autocomplete : menghilangkan history pengetikkan, required : harus diisi-->
 						<div class="col-sm-4 col-xs-12">
 							<input type="text" class="form-control" name="pekerjaan" autocomplete="off" value="<?php echo $data['pekerjaan'];?>" required />
+						</div>
+					</div>
+
+					<div class="form-group">
+						<label class="col-sm-2 col-xs-12 control-label no-padding-right">Username</label>
+
+						<div class="col-sm-4 col-xs-12">
+							<input type="text" class="form-control" name="username" autocomplete="off" value="<?php echo $data['username'];?>" required />
 						</div>
 					</div>
 

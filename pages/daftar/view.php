@@ -25,13 +25,24 @@
                   echo "";
                 } 
                 // jika alert = 1
-                // tampilkan pesan Gagal "email sudah terdaftar"
+                // tampilkan pesan Gagal "email atau username sudah terdaftar"
                 elseif ($_GET['alert'] == 1) { ?>
                     <div class="alert alert-danger alert-dismissible" role="alert">
                         <button type="button" class="close" data-dismiss="alert" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                         </button>
-                        <strong><i class="glyphicon glyphicon-alert"></i> Gagal!</strong> email sudah terdaftar.
+                        <strong><i class="glyphicon glyphicon-alert"></i> Gagal!</strong> email atau username sudah terdaftar.
+                    </div>
+                <?php
+                }
+                // jika alert = 3
+                // tampilkan pesan Gagal "jenis kelamin harus dipilih"
+                elseif ($_GET['alert'] == 3) { ?>
+                    <div class="alert alert-danger alert-dismissible" role="alert">
+                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                        <strong><i class="glyphicon glyphicon-alert"></i> Gagal!</strong> jenis kelamin harus dipilih.
                     </div>
                 <?php
                 } 
@@ -68,11 +79,11 @@
                                 <label class="col-sm-2 control-label">Jenis Kelamin</label>
                                 <div class="col-sm-7">
                                     <label class="radio-inline">
-                                        <input type="radio" name="jenis_kelamin" value="Laki-laki"> Laki-laki
+                                        <input type="radio" name="jenis_kelamin" value="Laki-laki" required> Laki-laki
                                     </label>
 
                                     <label class="radio-inline">
-                                        <input type="radio" name="jenis_kelamin" value="Perempuan"> Perempuan
+                                        <input type="radio" name="jenis_kelamin" value="Perempuan" required> Perempuan
                                     </label>
                                 </div>
                             </div>
@@ -80,7 +91,7 @@
                             <div class="form-group">
                                 <label class="col-sm-2 control-label">Alamat</label>
                                 <div class="col-sm-7">
-                                    <textarea class="form-control" name="alamat" rows="3" required></textarea>
+                                    <textarea class="form-control" name="alamat" rows="3" maxlength="50" required></textarea>
                                 </div>
                             </div>
 
@@ -99,6 +110,13 @@
                             </div>
 
                             <hr>
+
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">Username</label>
+                                <div class="col-sm-7">
+                                    <input type="text" class="form-control" name="username" autocomplete="off" required>
+                                </div>
+                            </div>
 
                             <div class="form-group">
                                 <label class="col-sm-2 control-label">Email</label>

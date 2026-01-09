@@ -206,7 +206,7 @@ if (!empty($_SESSION['email_klien']) && !empty($_SESSION['password_klien'])) {
             <li>
               <form class="" method="POST" action="login-check.php">
                     <div class="form-group">
-                        <input type="email" class="form-control" name="email" placeholder="Email" autocomplete="off" required>
+                        <input type="text" class="form-control" name="username" placeholder="Username" autocomplete="off" required>
                     </div>
 
                     <div class="form-group">

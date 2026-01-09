@@ -27,7 +27,7 @@
                   <button type="button" class="close" data-dismiss="alert" aria-label="Close">
                       <span aria-hidden="true">&times;</span>
                   </button>
-                  <strong><i class="glyphicon glyphicon-ok-circle"></i> Sukses!</strong> pendaftaran Anda berhasil, silahkan login menggunakan email dan password Anda.
+                  <strong><i class="glyphicon glyphicon-ok-circle"></i> Sukses!</strong> pendaftaran Anda berhasil, silahkan login menggunakan username dan password Anda.
               </div>
           <?php
           } 
@@ -45,7 +45,7 @@
                 <form role="form" method="POST" action="login-klien.php">
 
                   <div style="margin-top:10px" class="form-group">
-                    <input type="email" class="form-control" name="email" placeholder="email" autofocus autocomplete="off" required>
+                    <input type="text" class="form-control" name="username" placeholder="Username" autofocus autocomplete="off" required>
                   </div>
 
                   <div class="form-group">

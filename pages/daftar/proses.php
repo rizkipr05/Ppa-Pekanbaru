@@ -11,20 +11,35 @@ if (isset($_POST['daftar'])) {
 	$tgl           = explode('-',$tanggal);
 	$tanggal_lahir = $tgl[2]."-".$tgl[1]."-".$tgl[0];
 	
+	if (empty($_POST['jenis_kelamin'])) {
+		header("location: ../../main.php?page=daftar&alert=3");
+		exit;
+	}
 	$jenis_kelamin = mysqli_real_escape_string($mysqli, trim($_POST['jenis_kelamin']));
 	$alamat        = mysqli_real_escape_string($mysqli, trim($_POST['alamat']));
+	$alamat        = substr($alamat, 0, 50);
 	$telepon       = mysqli_real_escape_string($mysqli, trim($_POST['telepon']));
 	$pekerjaan     = mysqli_real_escape_string($mysqli, trim($_POST['pekerjaan']));
+	$username      = mysqli_real_escape_string($mysqli, trim($_POST['username']));
 	$email         = mysqli_real_escape_string($mysqli, trim($_POST['email']));
 	$password      = md5(mysqli_real_escape_string($mysqli, trim($_POST['password'])));
 
-	// perintah query untuk pengecekan email pada tabel klien
-	$query_email = mysqli_query($mysqli, "SELECT email FROM tbl_klien WHERE email='$email'")
-										  or die('Ada kesalahan pada query cek email : '.mysqli_error($mysqli));    
-	$row_email   = mysqli_num_rows($query_email);
+	// pastikan kolom username sudah ada
+	$cek_kolom = mysqli_query($mysqli, "SHOW COLUMNS FROM tbl_klien LIKE 'username'")
+									 or die('Ada kesalahan pada query cek kolom username: '.mysqli_error($mysqli));
+	if (mysqli_num_rows($cek_kolom) == 0) {
+		echo "<script type='text/javascript'>alert('Kolom username belum ada. Tambahkan kolom username di tabel tbl_klien terlebih dahulu.');</script>
+			  <meta http-equiv='refresh' content='0; url=../../main.php?page=daftar'>";
+		exit;
+	}
 
-	// jika data email sudah ada
-	if ($row_email > 0) {
+	// perintah query untuk pengecekan email atau username pada tabel klien
+	$query_cek = mysqli_query($mysqli, "SELECT id_klien FROM tbl_klien WHERE email='$email' OR username='$username'")
+										or die('Ada kesalahan pada query cek email/username : '.mysqli_error($mysqli));    
+	$row_cek   = mysqli_num_rows($query_cek);
+
+	// jika data email atau username sudah ada
+	if ($row_cek > 0) {
 		// maka alihkan ke halaman form pendaftaran
 		header("location: ../../main.php?page=daftar&alert=1");
 	}
@@ -38,6 +53,7 @@ if (isset($_POST['daftar'])) {
 															 alamat,
 															 telepon,
 															 pekerjaan,
+															 username,
 															 email,
 															 password)
 													  VALUES('$nama',
@@ -47,6 +63,7 @@ if (isset($_POST['daftar'])) {
 															 '$alamat',
 															 '$telepon',
 															 '$pekerjaan',
+															 '$username',
 															 '$email',
 															 '$password')")	
 									or die('Ada kesalahan pada query insert : '.mysqli_error($mysqli));    

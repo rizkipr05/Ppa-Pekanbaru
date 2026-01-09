@@ -26,12 +26,13 @@ else {
             $alamat         = mysqli_real_escape_string($mysqli, trim($_POST['alamat']));
             $telepon        = mysqli_real_escape_string($mysqli, trim($_POST['telepon']));
             $pekerjaan      = mysqli_real_escape_string($mysqli, trim($_POST['pekerjaan']));
+            $username       = mysqli_real_escape_string($mysqli, trim($_POST['username']));
             $email          = mysqli_real_escape_string($mysqli, trim($_POST['email']));
             $password       = md5(mysqli_real_escape_string($mysqli, trim($_POST['password'])));
 
             // perintah query untuk menyimpan data ke tabel klien
-            $query = mysqli_query($mysqli, "INSERT INTO tbl_klien(nama_klien,tempat_lahir,tanggal_lahir,jenis_kelamin,alamat,telepon,pekerjaan,email,password)
-                                            VALUES('$nama','$tempat_lahir','$tanggal_lahir','$jenis_kelamin','$alamat','$telepon','$pekerjaan','$email','$password')")
+            $query = mysqli_query($mysqli, "INSERT INTO tbl_klien(nama_klien,tempat_lahir,tanggal_lahir,jenis_kelamin,alamat,telepon,pekerjaan,username,email,password)
+                                            VALUES('$nama','$tempat_lahir','$tanggal_lahir','$jenis_kelamin','$alamat','$telepon','$pekerjaan','$username','$email','$password')")
                                             or die('Ada kesalahan pada query insert : '.mysqli_error($mysqli));    
 
             // cek query
@@ -58,6 +59,7 @@ else {
                 $alamat         = mysqli_real_escape_string($mysqli, trim($_POST['alamat']));
                 $telepon        = mysqli_real_escape_string($mysqli, trim($_POST['telepon']));
                 $pekerjaan      = mysqli_real_escape_string($mysqli, trim($_POST['pekerjaan']));
+                $username       = mysqli_real_escape_string($mysqli, trim($_POST['username']));
                 $email          = mysqli_real_escape_string($mysqli, trim($_POST['email']));
                 $password       = md5(mysqli_real_escape_string($mysqli, trim($_POST['password'])));
 
@@ -70,6 +72,7 @@ else {
                                                                         alamat              = '$alamat', 
                                                                         telepon             = '$telepon',
                                                                         pekerjaan           = '$pekerjaan', 
+                                                                        username            = '$username',
                                                                         email               = '$email'
                                                                   WHERE id_klien            = '$id_klien'")
                                                     or die('Ada kesalahan pada query update : '.mysqli_error($mysqli));
@@ -88,6 +91,7 @@ else {
                                                                         alamat              = '$alamat', 
                                                                         telepon             = '$telepon',
                                                                         pekerjaan           = '$pekerjaan', 
+                                                                        username            = '$username',
                                                                         email               = '$email',
                                                                         password            = '$password'
                                                                   WHERE id_klien            = '$id_klien'")
