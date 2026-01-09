@@ -47,19 +47,20 @@
 	</div><!-- /.row -->
 	
 	<div class="row">
-		<div class="col-xs-4 center">
+		<div class="col-xs-12 col-sm-5 col-md-4 center">
 			<!-- PAGE CONTENT BEGINS -->
-			<div style="margin-top:10px">
-				<img style="opacity:0.7" src="assets/img/logo-ppa.png" width="250">			</div>
+			<div class="beranda-logo-wrap">
+				<img class="beranda-logo" src="assets/img/logo-ppa.png" alt="Logo PPA">
+			</div>
 			<!-- <div>
 				<img src="assets/img/bg.jpg" width="100%">
 			</div> -->
 			<!-- PAGE CONTENT ENDS -->
 		</div><!-- /.col -->
-		<div class="col-xs-7">
+		<div class="col-xs-12 col-sm-7 col-md-8">
 			<!-- PAGE CONTENT BEGINS -->
-			<div style="margin-top:40px">
-				<p style="font-size:20px;text-align:justify">
+			<div class="beranda-text-wrap">
+				<p class="beranda-text">
 					Peraturan Kepala Kepolisian Negara Republik Indonesia No POL. : 10 Tahun 2007 Tentang unit Pelayanan Perempuan Dan Anak (Unit PPA) Di Lingkungan Kepolisian Negara Republik Indonesia<br />
 					Bertugas memberi pelayanan berbentuk perlindungan terhadap perempuan dan anak yang menjadi korban kejahatan dan dan penegakan hukum terhadap pelakunya				</p>
 			</div>

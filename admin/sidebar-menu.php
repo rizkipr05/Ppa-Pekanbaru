@@ -2,7 +2,7 @@
 // fungsi pengecekan hak_akses untuk menampilkan menu sesuai dengan hak_akses
 // jika hak_akses = Customer Service, tampilkan menu
 if ($_SESSION['hak_akses']=='Customer Service') { ?>
-    <ul class="nav nav-list">
+    <ul class="nav nav-list admin-sidebar-menu">
     <?php
     // fungsi untuk pengecekan menu aktif
     // jika menu beranda dipilih, menu beranda aktif
@@ -367,7 +367,7 @@ if ($_SESSION['hak_akses']=='Customer Service') { ?>
 } 
 // jika hak_akses = Pimpinan, tampilkan menu
 elseif ($_SESSION['hak_akses']=='Pimpinan'){ ?>
-    <ul class="nav nav-list">
+    <ul class="nav nav-list admin-sidebar-menu">
     <?php
     // fungsi untuk pengecekan menu aktif
     // jika menu beranda dipilih, menu beranda aktif
@@ -570,7 +570,7 @@ elseif ($_SESSION['hak_akses']=='Pimpinan'){ ?>
 }
 // jika hak_akses = Customer Service, tampilkan menu
 elseif ($_SESSION['hak_akses']=='konselor') { ?>
-    <ul class="nav nav-list">
+    <ul class="nav nav-list admin-sidebar-menu">
     <?php
     // fungsi untuk pengecekan menu aktif
     // jika menu beranda dipilih, menu beranda aktif

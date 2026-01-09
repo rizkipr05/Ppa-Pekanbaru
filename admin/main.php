@@ -29,6 +29,7 @@ session_start();      // memulai session
 
 		<!--ace styles-->
 		<link rel="stylesheet" type="text/css" href="assets/css/ace.min.css" class="ace-main-stylesheet" id="main-ace-style" />
+		<link rel="stylesheet" type="text/css" href="assets/css/custom-admin.css" />
 		<link rel="stylesheet" type="text/css" href="assets/js/ace-extra.min.js" />
 
 		<!-- Fungsi untuk membatasi karakter yang diinputkan -->
