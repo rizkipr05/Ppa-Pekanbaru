@@ -179,3 +179,31 @@
     padding-top: 0;
   }
 }
+
+.lap-konselor-header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.lap-konselor-print {
+  white-space: nowrap;
+}
+
+.lap-konselor-table {
+  margin-top: 10px;
+}
+
+@media (max-width: 767px) {
+  .lap-konselor-header h1 {
+    font-size: 20px;
+    margin-bottom: 0;
+  }
+
+  .lap-konselor-print {
+    width: 100%;
+    text-align: center;
+  }
+}

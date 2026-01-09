@@ -13,14 +13,14 @@
 
 <div class="page-content">
 	<div class="page-header">
-		<h1 style="color:#585858">
-			<i style="margin-right:7px" class="ace-icon fa fa-file-text-o"></i> Laporan Konselor
-			<a href="modules/lap-konselor/cetak.php" target="_blank">
-                <button class="btn btn-primary pull-right">
-					<i class="ace-icon fa fa-print"></i> Cetak
-				</button>
-            </a>
-		</h1>
+		<div class="lap-konselor-header">
+			<h1 style="color:#585858">
+				<i style="margin-right:7px" class="ace-icon fa fa-file-text-o"></i> Laporan Konselor
+			</h1>
+			<a href="modules/lap-konselor/cetak.php" target="_blank" class="btn btn-primary lap-konselor-print">
+				<i class="ace-icon fa fa-print"></i> Cetak
+			</a>
+		</div>
 	</div><!-- /.page-header -->
 
 	<div class="row">
@@ -34,7 +34,7 @@
 					<!-- div.table-responsive -->
 
 					<!-- div.dataTables_borderWrap -->
-					<div>
+					<div class="table-responsive lap-konselor-table">
 						<table id="simple-table" class="table table-striped table-bordered table-hover">
 							<thead>
 								<tr>
