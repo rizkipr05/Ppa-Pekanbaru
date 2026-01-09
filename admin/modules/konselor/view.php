@@ -11,14 +11,14 @@
 
 <div class="page-content">
 	<div class="page-header">
-		<h1 style="color:#585858">
-			<i style="margin-right:7px" class="ace-icon fa fa-user"></i> Konselor
-			<a href="?module=form_konselor&form=add">
-                <button class="btn btn-primary pull-right">
-					<i class="ace-icon fa fa-plus"></i> Tambah
-				</button>
-            </a>
-		</h1>
+		<div class="konselor-header">
+			<h1 style="color:#585858">
+				<i style="margin-right:7px" class="ace-icon fa fa-user"></i> Konselor
+			</h1>
+			<a href="?module=form_konselor&form=add" class="btn btn-primary konselor-add-btn">
+				<i class="ace-icon fa fa-plus"></i> Tambah
+			</a>
+		</div>
 	</div><!-- /.page-header -->
 
 <?php
@@ -79,8 +79,8 @@ elseif ($_GET['alert'] == 3) { ?>
 					<!-- div.table-responsive -->
 
 					<!-- div.dataTables_borderWrap -->
-					<div>
-						<table id="dynamic-table" class="table table-striped table-bordered table-hover">
+					<div class="table-responsive konselor-table">
+						<table id="dynamic-table" class="table table-striped table-bordered table-hover konselor-data-table">
 							<thead>
 								<tr>
 									<th>No.</th>

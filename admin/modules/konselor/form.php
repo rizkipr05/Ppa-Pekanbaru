@@ -66,7 +66,7 @@ if ($_GET['form']=='add') { ?>
 								<option value="Divisi Kesehatan Dan Forensik">Divisi Kesehatan Dan Forensik</option>
 								<option value="Divisi Konseling Napza dan Narkoba">Divisi Napza Dan Narkoba</option>
 								<option value="Divisi Perlindungan Perlindungan Korban, Saksi, Keluarga dan Teman">Divisi Perlindungan Perlindungan Korban, Saksi, Keluarga dan Teman</option>
-								<option value="Divisi Pembinaan">Divisi Pembinaan</option
+								<option value="Divisi Pembinaan">Divisi Pembinaan</option>
 								
 							</select>
 						</div>
@@ -186,7 +186,7 @@ elseif ($_GET['form']=='edit') {
 								<option value="Divisi Kesehatan Dan Forensik">Divisi Kesehatan Dan Forensik</option>
 								<option value="Divisi Konseling Napza dan Narkoba">Divisi Napza Dan Narkoba</option>
 								<option value="Divisi Perlindungan Perlindungan Korban, Saksi, Keluarga dan Teman">Divisi Perlindungan Perlindungan Korban, Saksi, Keluarga dan Teman</option>
-								<option value="Divisi Pembinaan">Divisi Pembinaan</option
+								<option value="Divisi Pembinaan">Divisi Pembinaan</option>
 							</select>
 						</div>
 					</div>

@@ -73,7 +73,7 @@ elseif ($_GET['alert'] == 3) { ?>
 			<!-- PAGE CONTENT BEGINS -->
 			<div class="row">
 				<div class="col-xs-12">
-					<div class="table-header">
+					<div class="table-header kategori-table-header">
 						Data Kategori Informasi
 					</div>
 					<!-- div.table-responsive -->

@@ -6,6 +6,183 @@
   align-items: center;
 }
 
+@media (max-width: 767px) {
+  .dataTables_wrapper .dataTables_length,
+  .dataTables_wrapper .dataTables_filter {
+    float: none;
+    text-align: left;
+    width: 100%;
+  }
+
+  .dataTables_wrapper .dataTables_filter label,
+  .dataTables_wrapper .dataTables_length label {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+  }
+
+  .dataTables_wrapper .dataTables_filter input {
+    width: 100% !important;
+    box-sizing: border-box;
+    margin: 6px 0 0;
+  }
+
+.dataTables_wrapper .dataTables_length select {
+  width: 100%;
+  margin-top: 6px;
+}
+}
+
+.klien-data-table {
+  width: 100%;
+}
+
+@media (max-width: 767px) {
+  .klien-data-table th,
+  .klien-data-table td {
+    white-space: nowrap;
+  }
+
+  .klien-data-table {
+    font-size: 12px;
+  }
+}
+
+.konselor-header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.konselor-add-btn {
+  white-space: nowrap;
+  margin-bottom: 16px;
+}
+
+.konselor-table {
+  margin-top: 10px;
+}
+
+.konselor-table .table-header {
+  margin-top: 16px;
+}
+
+.konselor-data-table {
+  width: 100%;
+}
+
+@media (max-width: 767px) {
+  .konselor-header {
+    margin-bottom: 24px;
+  }
+
+  .konselor-header h1 {
+    font-size: 20px;
+    margin-bottom: 0;
+  }
+
+  .konselor-add-btn {
+    width: 100%;
+    text-align: center;
+  }
+
+  .konselor-data-table th,
+  .konselor-data-table td {
+    white-space: nowrap;
+  }
+
+  .konselor-data-table {
+    font-size: 12px;
+  }
+
+  .konselor-form .form-group {
+    margin-bottom: 12px;
+  }
+
+  .konselor-form .col-xs-12 {
+    margin-bottom: 8px;
+  }
+
+  .konselor-form .chosen-container {
+    width: 100% !important;
+  }
+
+  .konselor-form-actions .btn {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+.konselor-form-actions .btn + .btn {
+  margin-left: 0;
+}
+}
+
+.kategori-header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.kategori-add-btn {
+  white-space: nowrap;
+  margin-bottom: 16px;
+}
+
+.kategori-table {
+  margin-top: 16px;
+}
+
+.kategori-table-header {
+  margin-top: 16px;
+}
+
+.kategori-data-table {
+  width: 100%;
+}
+
+@media (max-width: 767px) {
+  .kategori-header h1 {
+    font-size: 20px;
+    margin-bottom: 0;
+  }
+
+  .kategori-add-btn {
+    width: 100%;
+    text-align: center;
+  }
+
+  .kategori-data-table th,
+  .kategori-data-table td {
+    white-space: nowrap;
+  }
+
+  .kategori-data-table {
+    font-size: 12px;
+  }
+
+  .kategori-form .form-group {
+    margin-bottom: 12px;
+  }
+
+  .kategori-form .col-xs-12 {
+    margin-bottom: 8px;
+  }
+
+  .kategori-form-actions .btn {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .kategori-form-actions .btn + .btn {
+    margin-left: 0;
+  }
+}
+
 .grafik-card {
   border-radius: 6px;
   overflow: hidden;
@@ -263,5 +440,90 @@
 
   .lap-konsultasi-form .btn {
     width: 100%;
+  }
+}
+
+.grafik-card {
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.grafik-chart {
+  height: 450px;
+  max-width: 100%;
+}
+
+@media (max-width: 767px) {
+  .grafik-form .form-group {
+    margin-bottom: 12px;
+  }
+
+  .grafik-form .col-xs-12 {
+    margin-bottom: 10px;
+  }
+
+  .grafik-form .chosen-container {
+    width: 100% !important;
+  }
+
+  .grafik-submit .btn {
+    width: 100%;
+  }
+
+  .grafik-chart {
+    height: 320px;
+  }
+}
+
+@media (max-width: 767px) {
+  .klien-form .form-group {
+    margin-bottom: 12px;
+  }
+
+  .klien-form .col-xs-12 {
+    margin-bottom: 8px;
+  }
+
+  .klien-form .radio {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px 18px;
+  }
+
+  .klien-form-actions .btn {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .klien-form-actions .btn + .btn {
+    margin-left: 0;
+  }
+}
+
+.klien-header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.klien-add-btn {
+  white-space: nowrap;
+}
+
+.klien-table {
+  margin-top: 10px;
+}
+
+@media (max-width: 767px) {
+  .klien-header h1 {
+    font-size: 20px;
+    margin-bottom: 0;
+  }
+
+  .klien-add-btn {
+    width: 100%;
+    text-align: center;
   }
 }
