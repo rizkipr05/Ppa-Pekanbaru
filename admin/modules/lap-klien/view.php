@@ -22,10 +22,11 @@
 	<div class="row">
 		<div class="col-xs-12">
 			<!--PAGE CONTENT BEGINS-->
-			<form class="form-horizontal" role="form" name="frmFilter" action="modules/lap-klien/cetak.php" method="GET" target="_blank" />
+			<form class="form-horizontal lap-klien-form" role="form" name="frmFilter" action="modules/lap-klien/cetak.php" method="GET" target="_blank">
+				<div class="lap-klien-card">
 
 				<div class="form-group">
-					<div class="col-sm-9">
+					<div class="col-sm-9 col-xs-12">
 						<div class="radio">
 							<label>
 								<input type="radio" class="ace" name="filter" value="seluruh" checked="" />
@@ -38,7 +39,7 @@
 				<div class="hr hr-16 dotted"></div>
 
 				<div class="form-group">
-					<div class="col-sm-2">
+					<div class="col-sm-2 col-xs-12">
 						<div class="radio">
 							<label>
 								<input type="radio" class="ace" name="filter" value="perbulan" />
@@ -47,7 +48,7 @@
 						</div>
 					</div>
 
-					<div class="col-sm-3">
+					<div class="col-sm-3 col-xs-12">
 						<select class="chosen-select" id="bulan" name="bulan" data-placeholder="Bulan...">
 							<option value=""></option>
 							<option value="1">Januari</option>
@@ -65,7 +66,7 @@
 						</select>
 					</div>
 
-					<div class="col-sm-2">
+					<div class="col-sm-2 col-xs-12">
 						<select class="chosen-select" id="tahun" name="tahun" data-placeholder="Tahun...">
 							<option value=""></option>
 							<?php
@@ -84,10 +85,11 @@
 				
 				<div class="form-group">
 					<div class="clearfix form-actions">
-						<div class="col-md-offset-2 col-md-10">
+						<div class="col-md-offset-2 col-md-10 col-xs-12">
 							<button type="submit" class="btn btn-primary"><i class="ace-icon fa fa-print"></i> Cetak</button>
 						</div>
 					</div>
+				</div>
 				</div>
 			</form>
 			<!--PAGE CONTENT ENDS-->

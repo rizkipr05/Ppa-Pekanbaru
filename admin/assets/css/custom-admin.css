@@ -129,3 +129,53 @@
     display: none;
   }
 }
+
+@media (max-width: 767px) {
+  .lap-klien-form .form-group {
+    margin-bottom: 12px;
+  }
+
+  .lap-klien-form .col-xs-12 {
+    margin-bottom: 10px;
+  }
+
+  .lap-klien-form .chosen-container {
+    width: 100% !important;
+  }
+
+  .lap-klien-form .btn {
+    width: 100%;
+  }
+}
+
+.lap-klien-card {
+  background: #fff;
+  border: 1px solid #e6e8ec;
+  border-radius: 6px;
+  padding: 16px 18px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+}
+
+.lap-klien-form .radio {
+  margin-top: 4px;
+}
+
+.lap-klien-form .form-actions {
+  margin-bottom: 0;
+  padding-top: 10px;
+}
+
+.lap-klien-form .chosen-container-single .chosen-single {
+  height: 36px;
+  line-height: 34px;
+}
+
+@media (max-width: 767px) {
+  .lap-klien-card {
+    padding: 14px;
+  }
+
+  .lap-klien-form .form-actions {
+    padding-top: 0;
+  }
+}
