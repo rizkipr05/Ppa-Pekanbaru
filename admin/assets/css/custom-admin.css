@@ -207,3 +207,29 @@
     text-align: center;
   }
 }
+
+.lap-konsultasi-card {
+  background: #fff;
+  border: 1px solid #e6e8ec;
+  border-radius: 6px;
+  padding: 16px 18px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+}
+
+@media (max-width: 767px) {
+  .lap-konsultasi-form .form-group {
+    margin-bottom: 12px;
+  }
+
+  .lap-konsultasi-form .col-xs-12 {
+    margin-bottom: 10px;
+  }
+
+  .lap-konsultasi-form .chosen-container {
+    width: 100% !important;
+  }
+
+  .lap-konsultasi-form .btn {
+    width: 100%;
+  }
+}
