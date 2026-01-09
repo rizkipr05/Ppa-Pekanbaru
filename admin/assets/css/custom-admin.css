@@ -6,6 +6,38 @@
   align-items: center;
 }
 
+.grafik-card {
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.grafik-chart {
+  height: 450px;
+  max-width: 100%;
+}
+
+@media (max-width: 767px) {
+  .grafik-form .form-group {
+    margin-bottom: 12px;
+  }
+
+  .grafik-form .col-xs-12 {
+    margin-bottom: 10px;
+  }
+
+  .grafik-form .chosen-container {
+    width: 100% !important;
+  }
+
+  .grafik-submit .btn {
+    width: 100%;
+  }
+
+  .grafik-chart {
+    height: 320px;
+  }
+}
+
 .beranda-logo {
   max-width: 240px;
   width: 100%;

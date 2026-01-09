@@ -1062,11 +1062,11 @@ $(document).ready(function() {
 	<div class="row">
 		<div class="col-xs-12">
 			<!--PAGE CONTENT BEGINS-->
-			<form class="form-horizontal" role="form" action="?module=grafik" method="POST" />
+			<form class="form-horizontal grafik-form" role="form" action="?module=grafik" method="POST">
 				<div class="form-group">
-					<label class="col-sm-1 control-label no-padding-right">Tahun</label>
+					<label class="col-sm-1 col-xs-12 control-label no-padding-right">Tahun</label>
 
-					<div class="col-sm-3">
+					<div class="col-sm-3 col-xs-12">
 						<select class="chosen-select" id="tahun" name="tahun" data-placeholder="Tahun...">
 							<option value="<?php echo $tahun; ?>"><?php echo $tahun; ?></option>
 							<?php
@@ -1082,7 +1082,9 @@ $(document).ready(function() {
 						</select>
 					</div>
 
-					<input style="width:100px" type="submit" class="btn btn-sm btn-primary" name="tampil" value="Tampilkan" />
+					<div class="col-sm-2 col-xs-12 grafik-submit">
+						<input type="submit" class="btn btn-sm btn-primary" name="tampil" value="Tampilkan" />
+					</div>
 				</div>
 			</form>
 
@@ -1092,10 +1094,10 @@ $(document).ready(function() {
 			<?php
 			if (isset($_POST['tahun'])) { ?>
 				<div style="margin-bottom:20px" class="col-xs-12">
-					<div class="widget-box">
+					<div class="widget-box grafik-card">
 						<div class="widget-body">
 							<div class="widget-main">
-								<div id="konsultasi" style="height:450px;max-width:95%;"></div>
+								<div id="konsultasi" class="grafik-chart"></div>
 							</div>
 						</div>
 					</div>
